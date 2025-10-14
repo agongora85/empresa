@@ -24,6 +24,6 @@ class Pagina_model extends CI_Model{
             return $query->result();
         }else{
             return false;
-        }
+        }//Cierre del else
     }
 }
