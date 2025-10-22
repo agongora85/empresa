@@ -35,4 +35,11 @@ class Welcome extends CI_Controller {
 		$datos["correo"]="alejandro.gongora@correo.uady.mx";
 		$this->load->view('welcome_message',$datos);
 	}
+
+	public function avisos(){
+		$this->load->view('secciones/header');
+		$datos["librerias"]=$this->mP->consultar_librerias();
+		$this->load->view('librerias',$datos);
+		$this->load->view('secciones/footer');
+	}
 }

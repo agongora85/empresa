@@ -26,4 +26,14 @@ class Pagina_model extends CI_Model{
             return false;
         }//Cierre del else
     }
+
+    function consultar_librerias(){
+        $sql="exec pa_consultar_librerias";
+        $query=$this->db->query($sql);
+        if($query!=false){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
 }

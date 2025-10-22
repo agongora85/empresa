@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <h1>PROCEDIMIENTO DE SOLICITUD DE INSTALACIONES FCA</h1>
+            <p>Procedimiento de Solicitud de Espacios, Instalaciones, Mobiliario y Equipo</p>
+        </div>
+        <div class="col-sm-6 text-center">
+            <h1>Texto 2</h1>
+            <p>Texto de ejemplo</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 table-responsive">
+            <table id='tbllibrerias' class="table table-striped table-borderless border-bottom border-light dataTable no-footer table-condensed compact">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Librería</th>
+                        <th>Descripción</th>
+                        <th>Documentación</th>
+                    </tr>
+                </thead>
+                <?php
+                if(!empty($librerias)){
+                    echo "<tbody>";
+                    $i=1;
+                    foreach($librerias as $item){
+                        echo "<tr>";
+                            echo "<td>".$i."</td>";
+                            echo "<td>".$item->nombre."</td>";
+                            echo "<td>".$item->descripcion."</td>";
+                            echo "<td><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
+                        echo "</tr>";
+                        $i+=1;
+                    }
+                    echo "</tbody>";
+                }
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
+<script type='text/javascript'>
+    if($("#tbllibrerias").length){
+        tabla=$('#tbllibrerias').DataTable({
+            //aaSorting: [[7, "desc"]],
+            "oLanguage": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sSearch": "Buscar:",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                }
+            },
+            "responsive":true,
+            dom:"Bftip",
+        });
+        tabla.draw();
+    }//Fin del if
+</script>
