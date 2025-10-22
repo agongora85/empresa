@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		if(!empty($nombre_seccion)){
 			foreach($nombre_seccion as $item){
 				echo utf8_decode($item->nombre)."<br>";
-				echo $item->idcontenido."<br>";
+				echo $item->Id."<br>";
 				echo $item->contenido;
 			}
 		}
