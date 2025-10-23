@@ -18,6 +18,7 @@
                         <th>Librería</th>
                         <th>Descripción</th>
                         <th>Documentación</th>
+                        <th>Registro</th>
                     </tr>
                 </thead>
                 <?php
@@ -30,6 +31,7 @@
                             echo "<td>".$item->nombre."</td>";
                             echo "<td>".$item->descripcion."</td>";
                             echo "<td><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
+                            echo "<td>".$item->registro."</td>";
                         echo "</tr>";
                         $i+=1;
                     }
