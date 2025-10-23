@@ -39,6 +39,7 @@
                 }
                 ?>
             </table>
+            <!-- Cerramos el código de la tabla -->
         </div>
     </div>
 </div>
