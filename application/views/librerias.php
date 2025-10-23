@@ -31,7 +31,7 @@
                             echo "<td>".$item->nombre."</td>";
                             echo "<td>".$item->descripcion."</td>";
                             echo "<td><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
-                            echo "<td>".$item->registro."</td>";
+                            echo "<td>".date('d/m/Y',strtotime($item->registro))."</td>";
                         echo "</tr>";
                         $i+=1;
                     }
