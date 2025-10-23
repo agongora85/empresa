@@ -207,7 +207,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage"><img src="<?=base_url()?>assets/imagenes/logo.png" style='width:50%;' class='img-fluid img-thumbnail' alt="Logo"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">

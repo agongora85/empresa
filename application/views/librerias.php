@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style='padding:47px;'>
         <div class="col-sm-6 text-center">
             <h1><?=$titulo?></h1>
             <p><?=$descripcion;?></p>
@@ -19,6 +19,7 @@
                         <th>Descripción</th>
                         <th>Documentación</th>
                         <th>Registro</th>
+                        <th>Usuario</th>
                     </tr>
                 </thead>
                 <?php
@@ -30,8 +31,9 @@
                             echo "<td>".$i."</td>";
                             echo "<td>".$item->nombre."</td>";
                             echo "<td>".$item->descripcion."</td>";
-                            echo "<td><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
+                            echo "<td class='text-center'><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
                             echo "<td>".date('d/m/Y',strtotime($item->registro))."</td>";
+                            echo "<td>".$item->usuario."</td>";
                         echo "</tr>";
                         $i+=1;
                     }
