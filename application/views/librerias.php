@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6 text-center">
-            <h1>PROCEDIMIENTO DE SOLICITUD DE INSTALACIONES FCA</h1>
-            <p>Procedimiento de Solicitud de Espacios, Instalaciones, Mobiliario y Equipo</p>
+            <h1><?=$titulo?></h1>
+            <p><?=$descripcion;?></p>
         </div>
         <div class="col-sm-6 text-center">
             <h1>Texto 2</h1>
@@ -41,6 +41,36 @@
             </table>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12 text-justify">
+            <h3>Libreria Fontawesome</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+            <i class="fa fa-cubes" aria-hidden="true"></i>
+            <i class="fa fa-database" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-justify">
+            <h3>Select 2</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <select id="mi_select" style="width:100%;" class="js-example-basic-single">
+                <option value="AL">Alabama</option>
+                <option value="WY">Wyoming</option>
+                <option value="NY">New York</option>
+                <option value="CA">California</option>
+                <option value="TX">Texas</option>
+                <option value="FL">Florida</option>
+            </select>
+    </div>
 </div>
 <script type='text/javascript'>
     if($("#tbllibrerias").length){
@@ -69,4 +99,8 @@
         });
         tabla.draw();
     }//Fin del if
+
+    $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
 </script>

@@ -36,8 +36,18 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message',$datos);
 	}
 
-	public function avisos(){
+	public function avisos($id){
+		//log_message("error","El valor de id es: ".$id);
 		$this->load->view('secciones/header');
+		$datos["titulo"]="Listado de librerías";
+		$resultado=$this->mP->consultar_seccion(1);
+		if(!empty($resultado)){
+			foreach($resultado as $item){
+				$datos["descripcion"]=$item->contenido;
+			}
+		}else{
+			$datos["descripcion"]="";
+		}
 		$datos["librerias"]=$this->mP->consultar_librerias();
 		$this->load->view('librerias',$datos);
 		$this->load->view('secciones/footer');
