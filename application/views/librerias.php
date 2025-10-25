@@ -1,8 +1,8 @@
 <div class="container-fluid">
-    <div class="row" style='padding:47px;'>
+    <div class="row" style="padding:30px;">
         <div class="col-sm-6 text-center">
             <h1><?=$titulo?></h1>
-            <p><?=$descripcion;?></p>
+            <p><?=LimpiaCadena($descripcion);?></p>
         </div>
         <div class="col-sm-6 text-center">
             <h1>Texto 2</h1>
@@ -30,7 +30,7 @@
                         echo "<tr>";
                             echo "<td>".$i."</td>";
                             echo "<td>".$item->nombre."</td>";
-                            echo "<td>".$item->descripcion."</td>";
+                            echo "<td>".LimpiaCadena($item->descripcion)."</td>";
                             echo "<td class='text-center'><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
                             echo "<td>".date('d/m/Y',strtotime($item->registro))."</td>";
                             echo "<td>".$item->usuario."</td>";

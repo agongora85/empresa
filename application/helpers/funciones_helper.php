@@ -12,4 +12,9 @@ function convertir_estatus($p){
     return $respuesta;
 }
 
+function LimpiaCadena($string){
+    $texto=utf8_encode($string);
+    return $texto;
+}
+
 ?>
