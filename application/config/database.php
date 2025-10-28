@@ -97,16 +97,13 @@ $db['default'] = array(
 
 
 $db['default'] = array(
-	'dsn'	=> '',
-	//'dsn'	=> 'sqlsrv:server=DESKTOP-7FOI8H8\SQLEXPRESS;Database=empresa',
+	'dsn'	=> 'sqlsrv:server=172.17.12.157;Database=empresa',
 	//'hostname' => 'Driver={SQL Server};Server=DESKTOP-7FOI8H8\SQLEXPRESS;Database=empresa;',
-	'hostname' => 'Driver={SQL Server};Server=DESKTOP-7FOI8H8\SQLEXPRESS;Database=empresa;',
 	//'hostname'	=> 'Driver={SQL Server};Server=172.17.12.157;Database=empresa;',
-	//'hostname'	=> '',
 	'username' => 'sa',
 	'password' => '123456',
 	'database' => 'empresa',
-	'dbdriver' => 'odbc',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
