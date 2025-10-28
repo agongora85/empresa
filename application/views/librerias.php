@@ -11,7 +11,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12 table-responsive">
-            <h4>Tabla de Librerias: Proyecto Final</h4>
+            <h4>Tabla de Librerias: Proyecto Final de SIG</h4>
             <table id='tbllibrerias' class="table table-striped table-borderless border-bottom border-light dataTable no-footer table-condensed compact">
                 <thead>
                     <tr>
