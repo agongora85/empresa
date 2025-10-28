@@ -23,7 +23,6 @@
                     </tr>
                 </thead>
                 <?php
-                //Construyo la tabla
                 if(!empty($librerias)){
                     echo "<tbody>";
                     $i=1;
