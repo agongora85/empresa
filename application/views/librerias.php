@@ -19,7 +19,7 @@
                         <th>Descripción</th>
                         <th>Documentación</th>
                         <th>Registro</th>
-                        <th>Usuario</th>
+                        <!--<th>Usuario</th>-->
                     </tr>
                 </thead>
                 <?php
@@ -34,7 +34,7 @@
                             echo "<td>".LimpiaCadena($item->descripcion)."</td>";
                             echo "<td class='text-center'><a href='".$item->documentacion."' target='_blank'>Link</a></td>";
                             echo "<td>".date('d/m/Y',strtotime($item->registro))."</td>";
-                            echo "<td>".$item->usuario."</td>";
+                            //echo "<td>".$item->usuario."</td>";
                         echo "</tr>";
                         $i+=1;
                     }
