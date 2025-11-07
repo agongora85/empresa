@@ -36,6 +36,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message',$datos);
 	}
 
+	public function mensaje(){
+		$datos["nombre"]="Alejandro Góngora Escalante";
+		$datos["correo"]="alejandro.gongora@correo.uady.mx";
+		$this->load->view('welcome_message',$datos);
+	}
+
 	public function avisos($id){
 		//log_message("error","El valor de id es: ".$id);
 		$this->load->view('secciones/header');

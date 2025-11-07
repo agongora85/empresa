@@ -17,4 +17,8 @@ function LimpiaCadena($string){
     return $texto;
 }
 
+function ObtenerRespuesta(){
+    return "Bienvenido";
+}
+
 ?>
