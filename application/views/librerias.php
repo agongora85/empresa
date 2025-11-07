@@ -7,6 +7,8 @@
         <div class="col-sm-6 text-center">
             <h1>Texto 2</h1>
             <p>Texto de ejemplo</p>
+            <h4><?=base_url().RUTA_CARPETA?></h4>
+            <h5><?=ObtenerRespuesta()?></h5>
         </div>
     </div>
     <div class="row">
@@ -24,7 +26,6 @@
                     </tr>
                 </thead>
                 <?php
-                //Construyo la tabla
                 if(!empty($librerias)){
                     echo "<tbody>";
                     $i=1;
