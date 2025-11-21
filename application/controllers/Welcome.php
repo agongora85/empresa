@@ -58,4 +58,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('librerias',$datos);
 		$this->load->view('secciones/footer');
 	}
+
+	public function RegistroUsuario(){
+		$this->load->view('secciones/header');
+		$this->load->view('formularioregistro');
+		$this->load->view('secciones/footer');
+	}
 }
